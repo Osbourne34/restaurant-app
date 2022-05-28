@@ -1,0 +1,38 @@
+.category {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    &__label {
+        display: block;
+        margin-right: 15px;
+        padding: 7px 20px;
+
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        transition: .2s;
+        cursor: pointer;
+
+        &.active {
+            background-color: #ccc;
+
+            &:hover {
+                background-color: #ccc;
+                border-color: #ccc;
+            }
+        }
+
+        &:hover {
+            background-color: lighten(#ccc, (10%));
+            border-color: lighten(#ccc, (10%));
+        }
+    }
+
+    &__input {
+        appearance: none;
+        position: absolute;
+    }
+
+}

@@ -1,0 +1,36 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 30px;
+
+    @media (min-width: 768px) {
+        width: 35%;
+        height: calc(100vh - 40px);
+        margin-top: 0;
+    }
+
+    &__order-btn,
+    &__reset-btn {
+        width: 100%;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+
+        color: #fff;
+    }
+    &__order-btn {
+        background-color: green;
+        margin-bottom: 15px;
+    }
+    &__reset-btn {
+        background-color: red;
+    }
+
+    &__total-price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+.order-list {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    overflow: auto;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    flex-grow: 1;
+}

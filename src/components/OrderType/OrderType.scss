@@ -1,0 +1,46 @@
+.order-types {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+    &__label {
+        width: 100%;
+
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-right: none;
+
+        text-align: center;
+
+        transition: .2s;
+        cursor: pointer;
+
+        &.active {
+            background-color: #ccc;
+
+            &:hover {
+                background-color: #ccc;
+                border-color: #ccc;
+            }
+        }
+
+        &:hover {
+            background-color: lighten(#ccc, (10%));
+            border-color: lighten(#ccc, (10%));
+        }
+
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+            border-right: 1px solid #ccc;
+        }
+    }
+
+    &__input {
+        appearance: none;
+        position: absolute;
+    }
+}
