@@ -9,17 +9,17 @@ const OrderList = () => {
     const { products } = useSelector((state) => state.order);
 
     return (
-        <>
+        <div className='order-list'>
             {products.length > 0 ? (
-                <ul className='order-list'>
+                <ul className='order-list_items'>
                     {products.map((product) => {
                         return <OrderItem key={product.id} {...product} />;
                     })}
                 </ul>
             ) : (
-                <p>Список пуст</p>
+                <h1 className='order-list__empty'>Список пуст</h1>
             )}
-        </>
+        </div>
     );
 };
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { clearOrder } from './../../store/orderSlice';
 
 import './order.scss';
 
@@ -6,6 +8,13 @@ import OrderList from './../OrderList';
 import OrderType from '../OrderType';
 
 const Order = () => {
+    const dispatch = useDispatch();
+    const { totalPrice } = useSelector((state) => state.order);
+
+    const onClearOrder = () => {
+        dispatch(clearOrder());
+    };
+
     return (
         <div className='order'>
             <h2>Заказ</h2>
@@ -16,13 +25,17 @@ const Order = () => {
                 <OrderType />
 
                 <div className='order__total-price'>
-                    <h4>Цена: </h4>
-                    <h4>132000 сум</h4>
+                    <h3>Цена: </h3>
+                    <h3>
+                        {new Intl.NumberFormat('ru-RU').format(totalPrice)} сум
+                    </h3>
                 </div>
 
                 <div className='order__buttons'>
                     <button className='order__order-btn'>Заказ</button>
-                    <button className='order__reset-btn'>Очистить</button>
+                    <button onClick={onClearOrder} className='order__reset-btn'>
+                        Очистить
+                    </button>
                 </div>
             </div>
         </div>

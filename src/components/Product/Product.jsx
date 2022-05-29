@@ -2,14 +2,16 @@ import React from 'react';
 
 import './product.scss';
 
-const Product = ({ id, title, price }) => {
+const Product = ({ title, price, onAddProductToOrder }) => {
     return (
         <div className='product'>
             <div className='product__inner'>
                 <h3 className='product__title'>{title}</h3>
-                <div>{price} сум</div>
+                <div>{new Intl.NumberFormat('ru-RU').format(price)} сум</div>
             </div>
-            <button className='product__add-btn'>Добавить</button>
+            <button onClick={onAddProductToOrder} className='product__add-btn'>
+                Добавить
+            </button>
         </div>
     );
 };

@@ -1,11 +1,23 @@
 .order-list {
+    position: relative;
     margin-top: 10px;
     margin-bottom: 15px;
 
+    height: 500px;
     overflow: auto;
 
     border: 1px solid #ccc;
     border-radius: 5px;
 
     flex-grow: 1;
+
+    &__empty {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        width: 100%;
+        text-align: center;
+    }
 }
