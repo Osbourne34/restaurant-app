@@ -1,15 +1,15 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {products} from './../assets/database';
+import { createSlice } from '@reduxjs/toolkit';
+import { products } from './../assets/database';
 
 const initialState = {
-    products
-}
+    products,
+};
 
 export const productsSlice = createSlice({
     name: 'products',
     initialState,
-    reducers: {}
-})
+    reducers: {},
+});
 
 export const {} = productsSlice.actions;
 

@@ -1,10 +1,10 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {categories} from './../assets/database';
+import { createSlice } from '@reduxjs/toolkit';
+import { categories } from './../assets/database';
 
 const initialState = {
     categories,
-    currentCategory: categories[0].category
-}
+    currentCategory: categories[0].category,
+};
 
 export const categoriesSlice = createSlice({
     name: 'categories',
@@ -12,10 +12,10 @@ export const categoriesSlice = createSlice({
     reducers: {
         toggleCurrentCategory: (state, action) => {
             state.currentCategory = action.payload;
-        }
-    }
-})
+        },
+    },
+});
 
-export const {toggleCurrentCategory} = categoriesSlice.actions;
+export const { toggleCurrentCategory } = categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

@@ -8,21 +8,19 @@ import Order from '../../components/Order';
 
 const Waiter = () => {
     return (
-        <div className="waiter">
-            <div className="container">
-
-                <div className="waiter__wrapper">
-                    <div className="waiter__main">
+        <div className='waiter'>
+            <div className='container'>
+                <div className='waiter__wrapper'>
+                    <div className='waiter__main'>
                         <Category />
                         <Products />
                     </div>
 
                     <Order />
-
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Waiter;

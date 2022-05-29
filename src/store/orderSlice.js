@@ -1,6 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
-import pizza from "../assets/img/pizza.jpg";
-import cocaCola from "../assets/img/coca-cola.jpg";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     type: 'В зал',
@@ -10,26 +8,24 @@ const initialState = {
             id: 1,
             title: 'pizza',
             category: 'kitchen',
-            photo: pizza,
             price: 40000,
-            amount: 3
+            amount: 3,
         },
         {
             id: 8,
             title: 'coca-cola',
             category: 'storehouse',
-            photo: cocaCola,
             price: 12000,
-            amount: 1
+            amount: 1,
         },
-    ]
-}
+    ],
+};
 
 export const orderSlice = createSlice({
     name: 'order',
     initialState,
-    reducers: {}
-})
+    reducers: {},
+});
 
 export const {} = orderSlice.actions;
 

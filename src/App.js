@@ -4,7 +4,7 @@ import Waiter from './pages/Waiter/';
 
 function App() {
     return (
-        <div className="wrapper">
+        <div className='wrapper'>
             <Waiter />
         </div>
     );
