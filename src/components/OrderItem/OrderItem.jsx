@@ -35,15 +35,15 @@ const OrderItem = ({ id, title, price, amount }) => {
                 </div>
                 <div className='order-item__counter'>
                     <button
-                        onClick={() => onDecreaseProduct(id)}
-                        className='order-item__counter-btn increase'>
-                        +
-                    </button>
-                    <p className='order-item__amount'>{amount}</p>
-                    <button
                         onClick={() => onIncreaseProduct(id)}
                         className='order-item__counter-btn decrease'>
                         -
+                    </button>
+                    <p className='order-item__amount'>{amount}</p>
+                    <button
+                        onClick={() => onDecreaseProduct(id)}
+                        className='order-item__counter-btn increase'>
+                        +
                     </button>
                 </div>
             </div>
