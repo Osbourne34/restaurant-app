@@ -1,0 +1,11 @@
+.menu {
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__back-btn {
+        margin-right: 15px;
+    }
+}

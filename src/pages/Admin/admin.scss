@@ -1,0 +1,32 @@
+.admin {
+    padding-top: 30px;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 30px;
+        background-color: #1f75a1;
+        border-radius: 5px;
+
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// .color {
+//     color: #1f75a1;
+//     color: #22b582;
+//     color: #2045b3;
+//     color: #591bc4;
+//     color: #bd8517
+// }

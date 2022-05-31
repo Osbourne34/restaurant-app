@@ -13,9 +13,9 @@ const Products = () => {
     );
     const { products } = useSelector((state) => state.products);
 
-    const filterProductsByCategory = products.filter((product) => {
-        if (product.category === currentCategory) return true;
-    });
+    const filterProductsByCategory = products.filter(
+        (product) => product.category === currentCategory,
+    );
 
     const onAddProductToOrder = (product) => {
         dispatch(addProductToOrder(product));

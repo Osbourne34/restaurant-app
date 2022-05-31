@@ -9,6 +9,19 @@ li {
     list-style: none;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    outline: none;
+}
+
 button {
     font-family: inherit;
     font-size: 100%;
