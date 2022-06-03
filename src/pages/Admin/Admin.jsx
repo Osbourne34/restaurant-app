@@ -1,50 +1,27 @@
 import React from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import './admin.scss';
-
-import Finance from '../../components/Finance';
-import Form from '../../components/Form';
-import Menu from '../../components/Menu';
+import Dashboard from '../../components/Dashboard/Dashboard';
+import Finance from '../../components/Finance/Finance';
+import Monitoring from '../../components/Monitoring/Monitoring';
+import Goods from '../../components/Goods/Goods';
+import Users from '../../components/Users/Users';
+import Form from '../../components/FormForProduct/FormForProduct';
 
 const Admin = () => {
     return (
-        <div className='admin'>
-            <div className='container'>
-                <Routes>
-                    <Route
-                        path='/'
-                        element={
-                            <nav className='admin__nav'>
-                                <Link
-                                    className='admin__link'
-                                    to='/admin/finance'>
-                                    Доходы
-                                </Link>
-                                <Link
-                                    className='admin__link'
-                                    to='/admin/kitchen'>
-                                    Кухня
-                                </Link>
-                                <Link className='admin__link' to='/admin/stock'>
-                                    Склад
-                                </Link>
-                                <Link
-                                    className='admin__link'
-                                    to='/admin/create-product'>
-                                    Создание товара
-                                </Link>
-                            </nav>
-                        }
-                    />
-                    <Route path='finance' element={<Finance />} />
-                    <Route path='create-product' element={<Form />} />
-                    <Route path='kitchen' element={<Menu />} />
-                    <Route path='stock' element={<Menu />} />
-                    <Route path='edit-product/:id' element={<Form />} />
-                </Routes>
-            </div>
-        </div>
+        <>
+            <Routes>
+                <Route path='/' element={<Dashboard />}>
+                    <Route index element={<Finance />} />
+                    <Route path='monitoring' element={<Monitoring />} />
+                    <Route path='goods' element={<Goods />} />
+                    <Route path='users' element={<Users />} />
+                    <Route path='goods/create-product' element={<Form />} />
+                    <Route path='goods/:id' element={<Form />} />
+                </Route>
+            </Routes>
+        </>
     );
 };
 
