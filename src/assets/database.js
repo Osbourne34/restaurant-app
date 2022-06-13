@@ -75,12 +75,12 @@ export const products = [
 export const categories = [
     {
         id: 1,
-        category: 'kitchen',
+        category: 'Кухня',
         title: 'Кухня',
     },
     {
         id: 2,
-        category: 'stock',
+        category: 'Склад',
         title: 'Склад',
     },
 ];

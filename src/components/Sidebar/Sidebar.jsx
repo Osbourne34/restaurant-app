@@ -27,7 +27,7 @@ function Sidebar({ container, mobileOpen, setMobileOpen, handleDrawerToggle }) {
                 end
                 sx={{
                     '&.active': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
                     },
                 }}>
                 <ListItemIcon
@@ -46,7 +46,7 @@ function Sidebar({ container, mobileOpen, setMobileOpen, handleDrawerToggle }) {
                 to='monitoring'
                 sx={{
                     '&.active': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
                     },
                 }}>
                 <ListItemIcon
@@ -65,7 +65,7 @@ function Sidebar({ container, mobileOpen, setMobileOpen, handleDrawerToggle }) {
                 to='goods'
                 sx={{
                     '&.active': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
                     },
                 }}>
                 <ListItemIcon
@@ -84,7 +84,7 @@ function Sidebar({ container, mobileOpen, setMobileOpen, handleDrawerToggle }) {
                 to='users'
                 sx={{
                     '&.active': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
                     },
                 }}>
                 <ListItemIcon
